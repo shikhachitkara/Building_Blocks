@@ -66,7 +66,7 @@ app.post('/home',async(req,res)=>{
         to: email, 
         subject: "Building block confirmation timings",
         text: `Hello welcome ${name} to BuildingBlocks 👻 you entered at ${cinh}`, 
-        html: `<b>Hello welcome ${name} to BildingBlocks 👻 you entered at ${cinh} ${cinm} </b>`, 
+        html: `<b>Hello welcome ${name} to BuildingBlocks 👻 you entered at ${cinh} ${cinm} </b>`, 
       });
     
       console.log("Message sent: %s", info.messageId);
