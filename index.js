@@ -50,7 +50,7 @@ app.post('/home',async(req,res)=>{
 
     let transporter = nodemailer.createTransport({
        
-        service:"gmail",
+        service:"Gmail",
         auth: {
           user:process.env.EMAIL, // generated ethereal user
           pass:process.env.PASSWORD, // generated ethereal password
@@ -62,7 +62,7 @@ app.post('/home',async(req,res)=>{
     
       // send mail with defined transport object
       let info = await transporter.sendMail({
-        from: '"Building-Blocks 👻" <navjot1561@gmail.com>',
+        from: '"Building-Blocks 👻" <shikhaattar@gmail.com>',
         to: email, 
         subject: "Building block confirmation timings",
         text: `Hello welcome ${name} to BuildingBlocks 👻 you entered at ${cinh}`, 
@@ -102,7 +102,7 @@ app.put('/home/:id',async(req,res)=>{
     
 
 
-        service:"gmail",
+        service:"Gmail",
         auth: {
           user:process.env.EMAIL, // generated ethereal user
           pass:process.env.PASSWORD, // generated ethereal password
