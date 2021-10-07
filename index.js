@@ -3,7 +3,7 @@ const app=express();
 const dotenv=require("dotenv");
 dotenv.config({ path: './config.env' });
 const nodemailer=require('nodemailer');
-
+const port=process.env.PORT || 4000
 const mongoose=require('mongoose');
 const path=require('path');
 const Data=require('./models/dat');
@@ -142,6 +142,6 @@ app.delete('/home/:id',async (req,res)=>{
 
 
 
-app.listen(4000,(req,res)=>{
+app.listen(port,(req,res)=>{
     console.log("UP AT 3000");
 })
